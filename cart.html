@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CelularStore - Loja com Carrinho</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><i class="fas fa-mobile-alt"></i> CelularStore</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="index.html" class="simple-link">Versão Simples</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon" id="cartIcon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Loja Completa com Carrinho</h2>
+            <p>Adicione produtos ao carrinho e finalize sua compra de forma simples e segura</p>
+            <a href="#produtos" class="cta-button">Comprar Agora</a>
+        </div>
+        <div class="hero-image">
+            <i class="fas fa-shopping-cart hero-icon"></i>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produtos" class="products">
+        <div class="container">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <div class="products-grid">
+                <div class="product-card" data-id="1">
+                    <div class="product-image">
+                        <img src="images/celular_1.jpg" alt="Smartphone Premium">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="Smartphone Premium">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Smartphone Premium</h3>
+                        <p class="product-description">Tela 6.5", 128GB, Câmera 48MP</p>
+                        <div class="product-price">
+                            <span class="current-price" data-price="1299">R$ 1.299,00</span>
+                            <span class="old-price">R$ 1.499,00</span>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus" data-id="1">-</button>
+                                <input type="number" class="qty-input" data-id="1" value="1" min="1" max="10">
+                                <button class="qty-btn plus" data-id="1">+</button>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="1">
+                                <i class="fas fa-cart-plus"></i>
+                                Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="2">
+                    <div class="product-image">
+                        <img src="images/celular_2.jpg" alt="Smartphone Básico">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="Smartphone Básico">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Smartphone Básico</h3>
+                        <p class="product-description">Tela 5.5", 64GB, Câmera 13MP</p>
+                        <div class="product-price">
+                            <span class="current-price" data-price="599">R$ 599,00</span>
+                            <span class="old-price">R$ 699,00</span>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus" data-id="2">-</button>
+                                <input type="number" class="qty-input" data-id="2" value="1" min="1" max="10">
+                                <button class="qty-btn plus" data-id="2">+</button>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="2">
+                                <i class="fas fa-cart-plus"></i>
+                                Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="3">
+                    <div class="product-image">
+                        <img src="images/celular_3.jpg" alt="Smartphone Intermediário">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="Smartphone Intermediário">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Smartphone Intermediário</h3>
+                        <p class="product-description">Tela 6.1", 256GB, Câmera 64MP</p>
+                        <div class="product-price">
+                            <span class="current-price" data-price="899">R$ 899,00</span>
+                            <span class="old-price">R$ 999,00</span>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus" data-id="3">-</button>
+                                <input type="number" class="qty-input" data-id="3" value="1" min="1" max="10">
+                                <button class="qty-btn plus" data-id="3">+</button>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="3">
+                                <i class="fas fa-cart-plus"></i>
+                                Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="4">
+                    <div class="product-image">
+                        <img src="images/celular_4.jpg" alt="Smartphone Top de Linha">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="Smartphone Top de Linha">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Smartphone Top de Linha</h3>
+                        <p class="product-description">Tela 6.7", 512GB, Câmera 108MP</p>
+                        <div class="product-price">
+                            <span class="current-price" data-price="2199">R$ 2.199,00</span>
+                            <span class="old-price">R$ 2.499,00</span>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus" data-id="4">-</button>
+                                <input type="number" class="qty-input" data-id="4" value="1" min="1" max="10">
+                                <button class="qty-btn plus" data-id="4">+</button>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="4">
+                                <i class="fas fa-cart-plus"></i>
+                                Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Meu Carrinho</h3>
+            <button class="close-cart" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-content">
+            <div class="cart-items" id="cartItems">
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Seu carrinho está vazio</p>
+                    <small>Adicione produtos para começar</small>
+                </div>
+            </div>
+            <div class="cart-summary" id="cartSummary" style="display: none;">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">R$ 0,00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Frete:</span>
+                    <span id="shipping">Grátis</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="total">R$ 0,00</span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">
+                    <i class="fas fa-credit-card"></i>
+                    Finalizar Compra
+                </button>
+                <button class="clear-cart-btn" id="clearCartBtn">
+                    <i class="fas fa-trash"></i>
+                    Limpar Carrinho
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- About Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre a CelularStore</h2>
+                    <p>Há mais de 10 anos no mercado, a CelularStore é referência em venda de smartphones com qualidade e preços competitivos. Nossa missão é conectar você ao mundo digital com os melhores dispositivos do mercado.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Garantia Estendida</h4>
+                            <p>Todos os produtos com garantia de 12 meses</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h4>Entrega Rápida</h4>
+                            <p>Entregamos em todo o Brasil</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-headset"></i>
+                            <h4>Suporte 24/7</h4>
+                            <p>Atendimento especializado sempre disponível</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <i class="fas fa-store about-icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rua das Tecnologias, 123<br>Centro, São Paulo - SP</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 9999-9999</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contato@celularstore.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horário</h4>
+                            <p>Segunda a Sábado<br>9h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Seu Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-mobile-alt"></i> CelularStore</h3>
+                    <p>Sua loja de confiança para smartphones e acessórios.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-phone"></i> (11) 9999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@celularstore.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CelularStore. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Quick View -->
+    <div id="quickViewModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <h3 id="modalTitle"></h3>
+                    <p id="modalDescription"></p>
+                    <div class="modal-price">
+                        <span id="modalCurrentPrice"></span>
+                        <span id="modalOldPrice"></span>
+                    </div>
+                    <div class="modal-features">
+                        <h4>Características:</h4>
+                        <ul id="modalFeatures"></ul>
+                    </div>
+                    <div class="modal-actions">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus" id="modalQtyMinus">-</button>
+                            <input type="number" class="qty-input" id="modalQtyInput" value="1" min="1" max="10">
+                            <button class="qty-btn plus" id="modalQtyPlus">+</button>
+                        </div>
+                        <button class="add-to-cart-btn modal-add-btn" id="modalAddBtn">
+                            <i class="fas fa-cart-plus"></i>
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Toast -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Produto adicionado ao carrinho!</span>
+    </div>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
+
