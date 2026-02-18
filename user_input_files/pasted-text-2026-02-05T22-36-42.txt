@@ -1,0 +1,217 @@
+Actúa como um Analista de Dados Sênior e Arquiteto de Automações Industriais,
+especializado em Indústria 4.0, manutenção industrial e sistemas de dados.
+
+Quero que cries a SEÇÃO “PROJETOS” de um portfólio profissional, usando apenas
+informações reais fornecidas abaixo.
+
+⚠️ Importante:
+- NÃO simplificar demais
+- NÃO usar linguagem acadêmica
+- NÃO parecer projeto fictício
+- Usar linguagem corporativa, clara e objetiva
+- Foco em valor gerado, automação, dados e manutenção
+
+O resultado será exibido em um site de portfólio (HTML/CSS/JS).
+
+==================================================
+ESTRUTURA DE CADA PROJETO (OBRIGATÓRIA)
+==================================================
+Para cada projeto, gerar:
+
+1. Título do Projeto
+2. Status (FINALIZADO / ANDAMENTO / TESTE)
+3. Contexto / Problema
+4. Solução Implementada
+5. Tecnologias Utilizadas
+6. Resultado / Benefício Gerado
+
+==================================================
+PROJETOS A SEREM DOCUMENTADOS
+==================================================
+
+1) WHATSAPP OM’s FA1 (FINALIZADO)
+
+Contexto:
+Necessidade de automatizar o envio semanal das Ordens de Manutenção (OM’s)
+para mecânicos e eletricistas da linha FA1 via WhatsApp.
+
+Solução:
+Criação de um bot que executa automaticamente toda segunda-feira às 12:00,
+lendo dados de uma planilha Excel de planejamento semanal.
+O fluxo identifica números válidos, diferencia turnos (manhã/tarde),
+evita envio para colaboradores em férias ou sem OM programada,
+e executa o envio sem duplicidade.
+
+Tecnologias:
+Excel, Power Automate, WhatsApp API, lógica condicional, automação agendada.
+
+Resultado:
+Padronização da comunicação, redução de erros manuais,
+e garantia de entrega das OM’s no horário correto.
+
+
+--------------------------------------------------
+
+2) PATIO – Análise de Umidade e Produção (ANDAMENTO)
+
+Contexto:
+Suspeita de impacto da umidade e densidade da madeira
+na produção e no desempenho dos secadores e prensas.
+
+Solução:
+Levantamento de variáveis críticas com engenheiros de processo,
+extração de dados históricos e criação de análises em BI
+para correlacionar umidade, temperatura acima de 130ºC,
+produção de fibras e PP da prensa.
+
+Tecnologias:
+Power BI, análise estatística, dados históricos industriais.
+
+Resultado:
+Base analítica para decisões de processo e otimização produtiva.
+
+
+--------------------------------------------------
+
+3) TRACTIAN – Distribuição Automática de Insights (FINALIZADO)
+
+Contexto:
+Necessidade de redistribuir automaticamente insights de manutenção
+gerados pela Tractian para os grupos corretos de cada linha.
+
+Solução:
+Identificação automática da fábrica e linha via e-mail,
+classificação por pastas com Power Automate,
+remoção de HTML, formatação com IA
+e envio automático para os grupos corretos.
+
+Tecnologias:
+Power Automate, IA generativa, e-mail automation, WhatsApp.
+
+Resultado:
+Agilidade na resposta da manutenção e melhor comunicação operacional.
+
+
+--------------------------------------------------
+
+4) AUTOMAÇÃO PROD QI (FINALIZADO)
+
+Contexto:
+Necessidade de identificar mudanças estruturais em planilhas
+e manter base de dados atualizada sem perder fórmulas.
+
+Solução:
+Comparação automática de estruturas de planilhas usando Python,
+detecção de mudanças e cópia seletiva de colunas,
+preservando fórmulas e tabelas existentes.
+
+Tecnologias:
+Python, Pandas, OpenPyXL, JSON, automação de dados.
+
+Resultado:
+Confiabilidade dos dados e eliminação de atualizações manuais.
+
+
+--------------------------------------------------
+
+5) GRAFANA – Dashboard QUALITRACK (FINALIZADO)
+
+Contexto:
+Visualizar indicadores do QUALITRACK de forma clara e comparativa
+entre unidades e linhas de produção.
+
+Solução:
+Criação de tela com BCs destacados por cor,
+indicadores de acurácia, tempo acima da reserva,
+status da linha e espaço dedicado a alarmes e melhorias.
+
+Tecnologias:
+Grafana, dashboards industriais, indicadores visuais.
+
+Resultado:
+Melhor leitura operacional e apoio à tomada de decisão.
+
+
+--------------------------------------------------
+
+6) STREAMLIT – Indicadores Multiplas Unidades (FINALIZADO)
+
+Contexto:
+Consultas separadas por unidade tornavam a análise pesada e lenta.
+
+Solução:
+Reestruturação do código existente usando orientação a objetos,
+criando uma consulta geral otimizada para todas as unidades
+com controle visual via HTML e CSS.
+
+Tecnologias:
+Python, Streamlit, POO, HTML, CSS.
+
+Resultado:
+Melhor desempenho, escalabilidade e visão global dos dados.
+
+
+--------------------------------------------------
+
+7) ENVIO DE RELATÓRIOS POR WHATSAPP (TESTE)
+
+Contexto:
+Enviar atividades e pendências entre turnos automaticamente.
+
+Solução:
+Filtragem por unidade, status e linha (elétrica/mecânica),
+com direcionamento automático aos grupos corretos.
+
+Tecnologias:
+Power Automate, Excel, WhatsApp.
+
+Resultado:
+Padronização da passagem de turno e redução de falhas de comunicação.
+
+
+--------------------------------------------------
+
+8) ULTRONLINE – Reenvio de Alarmes (TESTE)
+
+Contexto:
+Reencaminhar alertas de alarmes para grupos da fábrica.
+
+Solução:
+Recebimento de alertas por e-mail,
+remoção de HTML, formatação com IA
+e redistribuição via WhatsApp com identificação da fábrica.
+
+Tecnologias:
+Power Automate, IA generativa, e-mail, WhatsApp.
+
+Resultado:
+Projeto piloto para futura expansão multiunidades.
+
+
+--------------------------------------------------
+
+9) CUSTO POR INSIGHTS (ANDAMENTO)
+
+Contexto:
+Mensurar o impacto financeiro evitado por alertas de manutenção.
+
+Solução:
+Extração histórica de insights,
+cálculo de tempo médio de parada evitada,
+vinculação com planilhas de custo
+e preparação para dashboard analítico.
+
+Tecnologias:
+Análise de dados, Excel, BI / Streamlit, automação.
+
+Resultado:
+Base para justificar investimentos em manutenção preditiva.
+
+==================================================
+FORMATO FINAL DESEJADO
+==================================================
+- Texto organizado em cards de projetos
+- Linguagem profissional
+- Ideal para site de portfólio
+- Sem emojis
+- Em português (Brasil)
